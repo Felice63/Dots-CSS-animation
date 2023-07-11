@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <title>Document</title>
+    <meta name="author" content="Felice">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+ <section class="dots">
+
+<!-- ADD PLAY CHECKBOX inside -->
+<!-- BUT NOW THERE ARE 7 children so re-number the :nth-child starting at 3 to 7 -->
+
+<label>Click to play</label>
+<input type="checkbox" id="play" unchecked>
+
+    <div class="dot"></div><!-- 3 -->
+    <div class="dot"></div><!-- 4 -->
+    <div class="dot"></div><!-- 5 -->
+    <div class="dot"></div><!-- 6 -->
+    <div class="dot"></div><!-- 7 -->
+ </section>
+</body>
+</html>
+
+<!-- THEN THIS IS THE STYLE SYNTAX:
+Adjacent sybing
+
+input[type="checkbox"]:checked ~ .dot {
+    animation-play-state: running;
+}
+
+-->
